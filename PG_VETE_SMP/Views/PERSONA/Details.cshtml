@@ -1,0 +1,66 @@
+﻿@model Capa_Datos.PERSONA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PERSONA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDO_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDO_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_NACIMIENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_NACIMIENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIRECCION.OTRAS_SENAS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIRECCION.OTRAS_SENAS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GENERO.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GENERO.DESCRIPCION)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CEDULA }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

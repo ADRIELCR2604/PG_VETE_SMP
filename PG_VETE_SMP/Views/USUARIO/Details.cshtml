@@ -1,0 +1,50 @@
+﻿@model Capa_Datos.USUARIO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>USUARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CONTRASENA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONTRASENA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACTIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACTIVO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PERSONA.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PERSONA.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO_USUARIO.USUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_USUARIO.USUARIO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NOMBRE_USUARIO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

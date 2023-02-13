@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RH_VETE_SMPModelStoreContainer" CdmEntityContainer="RH_VETE_SMPEntities">
+    <EntitySetMapping Name="CANTON">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.CANTON">
+        <MappingFragment StoreEntitySet="CANTON">
+          <ScalarProperty Name="ID_CANTON" ColumnName="ID_CANTON" />
+          <ScalarProperty Name="ID_PROVINCIA" ColumnName="ID_PROVINCIA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CORREO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.CORREO">
+        <MappingFragment StoreEntitySet="CORREO">
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ID_CORREO" ColumnName="ID_CORREO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CURRICULUM">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.CURRICULUM">
+        <MappingFragment StoreEntitySet="CURRICULUM">
+          <ScalarProperty Name="ID_CURRICULUM" ColumnName="ID_CURRICULUM" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ARCHIVO" ColumnName="ARCHIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIRECCION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.DIRECCION">
+        <MappingFragment StoreEntitySet="DIRECCION">
+          <ScalarProperty Name="ID_DIRECCION" ColumnName="ID_DIRECCION" />
+          <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+          <ScalarProperty Name="OTRAS_SENAS" ColumnName="OTRAS_SENAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRITO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.DISTRITO">
+        <MappingFragment StoreEntitySet="DISTRITO">
+          <ScalarProperty Name="ID_DISTRITO" ColumnName="ID_DISTRITO" />
+          <ScalarProperty Name="ID_CANTON" ColumnName="ID_CANTON" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="ID_PUESTO" ColumnName="ID_PUESTO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="FECHA_INICIO_T" ColumnName="FECHA_INICIO_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVALUACION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.EVALUACION">
+        <MappingFragment StoreEntitySet="EVALUACION">
+          <ScalarProperty Name="ID_EVALUACION" ColumnName="ID_EVALUACION" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="PERIODO_EVALUACION" ColumnName="PERIODO_EVALUACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORMULARIO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.FORMULARIO">
+        <MappingFragment StoreEntitySet="FORMULARIO">
+          <ScalarProperty Name="ID_FORMULARIO_RECLUTAMIENTO" ColumnName="ID_FORMULARIO_RECLUTAMIENTO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ANNOS_EXPERIENCIA" ColumnName="ANNOS_EXPERIENCIA" />
+          <ScalarProperty Name="ESTUDIOS" ColumnName="ESTUDIOS" />
+          <ScalarProperty Name="TRABAJO_ANTERIOR" ColumnName="TRABAJO_ANTERIOR" />
+          <ScalarProperty Name="DESCRIPCION_PERSONAL" ColumnName="DESCRIPCION_PERSONAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.GENERO">
+        <MappingFragment StoreEntitySet="GENERO">
+          <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORICO_CAPACITACION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.HISTORICO_CAPACITACION">
+        <MappingFragment StoreEntitySet="HISTORICO_CAPACITACION">
+          <ScalarProperty Name="ID_H_CAPACITACION" ColumnName="ID_H_CAPACITACION" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.PERSONA">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="APELLIDO_1" ColumnName="APELLIDO_1" />
+          <ScalarProperty Name="APELLIDO_2" ColumnName="APELLIDO_2" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="ID_DIRECCION" ColumnName="ID_DIRECCION" />
+          <ScalarProperty Name="ID_GENERO" ColumnName="ID_GENERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANILLA">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.PLANILLA">
+        <MappingFragment StoreEntitySet="PLANILLA">
+          <ScalarProperty Name="ID_PLANILLA" ColumnName="ID_PLANILLA" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ID_TURNO" ColumnName="ID_TURNO" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="CCSS" ColumnName="CCSS" />
+          <ScalarProperty Name="RENTA" ColumnName="RENTA" />
+          <ScalarProperty Name="TOTAL_CON_REBAJOS" ColumnName="TOTAL_CON_REBAJOS" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="AGUINALDO" ColumnName="AGUINALDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVINCIA">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.PROVINCIA">
+        <MappingFragment StoreEntitySet="PROVINCIA">
+          <ScalarProperty Name="ID_PROVINCIA" ColumnName="ID_PROVINCIA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUESTO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.PUESTO">
+        <MappingFragment StoreEntitySet="PUESTO">
+          <ScalarProperty Name="ID_PUESTO" ColumnName="ID_PUESTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="SALARIO" ColumnName="SALARIO" />
+          <ScalarProperty Name="ID_T_CAPACITACION" ColumnName="ID_T_CAPACITACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REMUNERACION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.REMUNERACION">
+        <MappingFragment StoreEntitySet="REMUNERACION">
+          <ScalarProperty Name="ID_REMUNERACION" ColumnName="ID_REMUNERACION" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="ID_PUESTO" ColumnName="ID_PUESTO" />
+          <ScalarProperty Name="CALIFICACION" ColumnName="CALIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPORTE_HISTORIAL">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.REPORTE_HISTORIAL">
+        <MappingFragment StoreEntitySet="REPORTE_HISTORIAL">
+          <ScalarProperty Name="ID_REPORTE_HISTORIAL" ColumnName="ID_REPORTE_HISTORIAL" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ID_TURNO" ColumnName="ID_TURNO" />
+          <ScalarProperty Name="HORA_ENTRADA" ColumnName="HORA_ENTRADA" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SELECCION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.SELECCION">
+        <MappingFragment StoreEntitySet="SELECCION">
+          <ScalarProperty Name="ID_SELECCION" ColumnName="ID_SELECCION" />
+          <ScalarProperty Name="ID_CURRICULUM" ColumnName="ID_CURRICULUM" />
+          <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CAPACITACION">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.T_CAPACITACION">
+        <MappingFragment StoreEntitySet="T_CAPACITACION">
+          <ScalarProperty Name="ID_T_CAPACITACION" ColumnName="ID_T_CAPACITACION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TELEFONO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.TELEFONO">
+        <MappingFragment StoreEntitySet="TELEFONO">
+          <ScalarProperty Name="NUMERO_TELEFONO" ColumnName="NUMERO_TELEFONO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="ID_TIPO_TELEFONO" ColumnName="ID_TIPO_TELEFONO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CORREO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.TIPO_CORREO">
+        <MappingFragment StoreEntitySet="TIPO_CORREO">
+          <ScalarProperty Name="ID_CORREO" ColumnName="ID_CORREO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_TELEFONO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.TIPO_TELEFONO">
+        <MappingFragment StoreEntitySet="TIPO_TELEFONO">
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_USUARIO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.TIPO_USUARIO">
+        <MappingFragment StoreEntitySet="TIPO_USUARIO">
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.TURNO">
+        <MappingFragment StoreEntitySet="TURNO">
+          <ScalarProperty Name="ID_TURNO" ColumnName="ID_TURNO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="HORA_ENTRADA" ColumnName="HORA_ENTRADA" />
+          <ScalarProperty Name="HORA_SALIDA" ColumnName="HORA_SALIDA" />
+          <ScalarProperty Name="ID_PUESTO" ColumnName="ID_PUESTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="RH_VETE_SMPModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="NOMBRE_USUARIO" ColumnName="NOMBRE_USUARIO" />
+          <ScalarProperty Name="CONTRASENA" ColumnName="CONTRASENA" />
+          <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
